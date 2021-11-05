@@ -15,10 +15,10 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 
     // if the user_name or password is empty will remind the user to reenter again.
     if (empty($uname)) {
-        header("Location: /fastplate/frontend/login/index.php?error=Oops! Enter your user name.");
+        header("Location: /fastplate/frontend/login/fLogin.php?error=Oops! Enter your user name.");
         exit();
     } else if (empty($password)) {
-        header("Location: /fastplate/frontend/login/index.php?error=Oops! Enter your password.");
+        header("Location: /fastplate/frontend/login/fLogin.php?error=Oops! Enter your password.");
         exit();
     } else {
         //after all condition is true it will run the query.
@@ -33,12 +33,12 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
                 header("Location: /fastplate/frontend/logout/main2.php");
             } else {
                 //if false it will display the error message
-                header("Location:/fastplate/frontend/login/index.php?error=Sorry, we don't recognize that user_name or password. 123Try again!");
+                header("Location:/fastplate/frontend/login/fLogin.php?error=Sorry, we don't recognize that user_name or password. 123Try again!");
                 exit();
             }
         } else {
             //if false it will display the error message
-            header("Location:/fastplate/frontend/login/index.php?error=Sorry, we don't recognize that user name or password.  Try again!");
+            header("Location:/fastplate/frontend/login/fLogin.php?error=Sorry, we don't recognize that user name or password.  Try again!");
             exit();
         }
     }
