@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form action="/fastplate/backend/register/register.php" method="POST" class="form">
+    <form action="/backend/register/register.php" method="POST" class="form">
         <div class="signup">Sign up</div>
         <br><br>
         <div class="form-group">
