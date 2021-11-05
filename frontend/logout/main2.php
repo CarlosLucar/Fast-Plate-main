@@ -32,7 +32,7 @@
             <li class="menu"><a href="#">Become Partner</a></li>
             <li class="menu"><a href="#">Contact support</a></li>
             <li class="menu"><a href="#">Register</a></li>
-            <li class="menu"><a href="/fastplate/backend/logout/logout.php">Log out</a></li>
+            <li class="menu"><a href="/backend/logout/logout.php">Log out</a></li>
         </ul>
     </div>
 </body>
