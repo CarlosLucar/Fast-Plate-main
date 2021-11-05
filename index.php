@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Fastplate</title>
+    <link rel="shortcut icon" type="image/png" href="/img/fastplate.png">
 </head>
 
 <body>
