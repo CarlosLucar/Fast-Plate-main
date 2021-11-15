@@ -11,7 +11,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
     }
     // set the value for user_name and password
     $uname = validate($_POST['uname']);
-    $password = validate($_POST['password']);
+    $password = validate(sha1($_POST['password']));
 
     // if the user_name or password is empty will remind the user to reenter again.
     if (empty($uname)) {
