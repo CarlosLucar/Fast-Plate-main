@@ -31,8 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($run) {
 
-            echo "<p> You have been registered</p>";
-            // header("Refresh:3, URL=displayfood.php");
+            echo "<p>Still waiting to be proceed......</p>";
+            header("Refresh:3, URL=/fast-plate-main/frontend/login/flogin.php");
         } else {
             echo "<h1>Error!</h1><p>You could not be regitered, please try again</p>";
             echo "<p>" . mysqli_error($dbc) . "</p>";
