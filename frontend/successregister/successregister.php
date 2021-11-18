@@ -11,7 +11,7 @@
 
 <body>
     <div id="click">
-        <a href="/frontend/successregister/successregister.php">Click here to main page</a>
+        <a href="/index.php">Click here to main page</a>
     </div>
 </body>
 
