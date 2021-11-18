@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($run) {
 
             echo "<p>Still waiting to be proceed......</p>";
-            header("Refresh:3, URL=/fast-plate-main/index.php");
+            header("Refresh:3, URL=/Fast-Plate-main/index.php");
         } else {
             echo "<h1>Error!</h1><p>You could not be regitered, please try again</p>";
             echo "<p>" . mysqli_error($dbc) . "</p>";
