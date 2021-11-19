@@ -2,7 +2,11 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     require('db_conn.php');
     $errors = array();
-
+    if (empty($_POST['fname'])) {
+        $errors[] = "You forgot to enter your full name";
+    } else {
+        $fn = mysqli_real_escape_string($dbc, $_POST['fname']);
+    }
     if (empty($_POST['uname'])) {
         $errors[] = "You forgot to enter your first name";
     } else {
@@ -24,8 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $n = $_POST['uname'];
         $e = $_POST['email'];
         $p = $_POST['password'];
-        $query = "INSERT INTO users (user_name, email, password, reg_date) value('$n','$e',SHA1('$p'),NOW())";
-
+        // $query = "INSERT INTO users (user_name, email, password, reg_date) value('$n','$e',SHA1('$p'),NOW())";
+        $query = "INSERT INTO users (display,user_name, email, password, reg_date) value('$fn','$n','$e',SHA1('$p'),NOW())";
         $run = mysqli_query($dbc, $query);
 
 

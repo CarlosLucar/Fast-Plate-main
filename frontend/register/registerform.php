@@ -15,6 +15,13 @@
         <div class="signup">Sign up</div>
         <br><br>
         <div class="form-group">
+            <span class="input4">
+                <label for="fname"><b>Full Name: </b></label><br>
+                <br>
+            </span>
+            <input class="registerinput" type="text" name="fname" id="display" placeholder="Full name" />
+        </div>
+        <div class="form-group">
             <span class="input3">
                 <label for="uname"><b>User Name: </b></label><br>
                 <br>
