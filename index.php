@@ -43,7 +43,7 @@ $results = mysqli_query($dbc, $query);
             <li class="menu"><a href="#">Contact support</a></li>
             <li class="menu"><a href="/frontend/register/registerform.php">Register</a></li>
             <li class="menu"><a href="/frontend/login/fLogin.php">Login</a></li>
-            <li class="menu"><a href="/fastplate/cart.php">Cart <span>0</span></a></li>
+            <li class="menu"><a href="/cart.php">Cart <span>0</span></a></li>
         </ul>
     </div>
 
