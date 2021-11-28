@@ -45,8 +45,42 @@
             
         </div>
     </div>
+    <div id="checkout">
+        <form>
+            <label for="fname"> First Name:</label><br>
+            <input type="text" id="fname"><br>
+
+            <label for="lname"> Last Name:</label><br>
+            <input type="text" id="lname"><br>
+
+            <label for="phone"> Phone Number:</label><br>
+            <input type="text" id="phone"><br>
+
+            <label for="email"> Email:</label><br>
+            <input type="text" id="email"><br>
+
+            <label for="address"> Address:</label><br>
+            <input type="text" id="address"><br>
+
+        </form>
+
+        <br>
+        <button id="order" onclick="calcRoute();">Order</button>
+    </div>
 
 
+    <div id="receipt">
+        <span id="first"></span>
+        <span id="last"></span> <br>
+        <div id="output"></div>
+
+    </div>
+
+    <div id="googleMap"></div>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk4f4Y2aKZMxmpt-H9IfjCzY6GhGDPfcg&libraries=places"></script>
     <script src="cart.js"></script>
+    <script src="maps.js"></script>
 </body>
 </html>

@@ -205,3 +205,21 @@ body{
 }
 
 
+#checkbtn{
+    position: relative;
+    left: 50%;
+}
+
+#checkout{
+    width: 15%;
+    margin: 0 auto;
+}
+
+
+/* -------------------------------- Google Map ------------------------------------*/
+
+#googleMap{
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+}

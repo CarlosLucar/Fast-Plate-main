@@ -300,5 +300,6 @@ function displayCart(){
     }
 }
 
+
 onLoadCartNumbers();
 displayCart();
