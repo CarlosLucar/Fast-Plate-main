@@ -12,7 +12,7 @@
 <body>
     <img src="image/welcome.jpg" width="500" height="400">
     <h1>Thank you for consider to partner with us</h1>
-    <h5>We will review the application then get back to you</h5>
+    <h2>We will review the application then get back to you</h2>
     <div id="click">
         <a href="/index.php">Click here to main page</a>
     </div>
