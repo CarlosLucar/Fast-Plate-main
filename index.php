@@ -39,7 +39,7 @@ $results = mysqli_query($dbc, $query);
                 </div>
             </li>
             <li class="menu"><a href="/frontend/aboutus/aboutus.php">About Us</a></li>
-            <li class="menu"><a href="#">Become Partner</a></li>
+            <li class="menu"><a href="/frontend/contact/contact.php">Become Partner</a></li>
             <li class="menu"><a href="#">Contact support</a></li>
             <li class="menu"><a href="/frontend/register/registerform.php">Register</a></li>
             <li class="menu"><a href="/frontend/login/fLogin.php">Login</a></li>
