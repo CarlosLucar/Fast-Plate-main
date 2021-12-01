@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form action="/login/backend/login/login.php" method="post">
+    <form action="/frontend/contact/ty.php" method="post">
         <h2>Became Partner</h2>
         <label for="">First Name</label>
         <input type="text" name="fname" placeholder="User Name"><br>

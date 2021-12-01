@@ -70,3 +70,20 @@ button:hover{
     padding-right: 280px;
     margin-left: 12px;
 }
+
+/* ty php */
+body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #eff9ff;
+}
+#welcome{
+    border-radius: 8px;
+    width: 10px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
