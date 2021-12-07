@@ -15,8 +15,8 @@ $results = mysqli_query($dbc, $query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+    
     <title>Fastplate</title>
     <link rel="shortcut icon" type="image/png" href="/img/fastplate.png">
 </head>
@@ -29,14 +29,7 @@ $results = mysqli_query($dbc, $query);
         <ul>
             <li class="logo"><i class="w3-margin-left fa fa-home"></i><a href="#"> fastplate</a></li>
 
-            <li class="menu"><a href="#">Food Menu</a>
-                <div class="submenu">
-                    <ul>
-                        <li><a href="#">Sushi</a></li>
-                        <li><a href="#">Drink</a></li>
-                        <li><a href="#">Vegetable</a></li>
-                    </ul>
-                </div>
+        
             </li>
             <li class="menu"><a href="/frontend/aboutus/aboutus.php">About Us</a></li>
             <li class="menu"><a href="/frontend/contact/contact.php">Become Partner</a></li>

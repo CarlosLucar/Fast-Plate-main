@@ -8,6 +8,7 @@ body{
 .menu-bar{
     background-color: #EDEDF5;
     text-align: center;
+    
 }
 .menu-bar ul{
     display:inline-flex;
@@ -16,7 +17,7 @@ body{
     font-family: 'Festive', cursive;
 }
 .menu-bar ul .logo{
-    margin-right: 400px;
+    margin-right: 30rem;
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -31,7 +32,6 @@ body{
     font-weight: bold;
 }
 .menu-bar ul li{
-    width:120px;
     margin:10px;
     padding:13px;
 }
@@ -45,36 +45,7 @@ body{
     background-color: #DDDDF0;
     border-radius:3px;
 }
-.submenu{
-    display: none;
-}
 
-.menu-bar ul li:hover .submenu ul li a:hover{
-    color:red;
-    
-}
-.menu-bar ul li:hover .submenu{
-    display: block;
-    position: absolute;
-    background-color: #EDEDF5;
-    margin-top: 15px;
-    margin-left: -15px;
-}
-.menu-bar ul li:hover .submenu ul{
-    display: block;
-    margin:10px;
-}
-.menu-bar ul .menu .submenu ul li:hover{
-    background-color: #DDDDF0;
-
-}
-.menu-bar ul li:hover .submenu ul li{
-    width:150px;
-    padding:20px;
-    background:transparent;
-    border-radius: 0;
-   
-}
 
 #content{
     margin-top: 5%;
@@ -94,7 +65,7 @@ body{
 
 #menu1, #menu2, #menu3, #menu4, #menu5{
     background-color: white;
-    width: 1300px;
+    width:70%;
     border-radius: 10%;
     height: fit-content;
     position: absolute;
