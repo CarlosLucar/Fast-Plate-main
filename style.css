@@ -1,196 +1,250 @@
-*{
-    padding:0;
-    margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    background-color:#eff9ff;
+body {
+  background-color: #eff9ff;
 }
-.menu-bar{
-    background-color: #EDEDF5;
-    text-align: center;
-    
+.menu-bar {
+  background-color: #ededf5;
+  text-align: center;
 }
-.menu-bar ul{
-    display:inline-flex;
-    list-style:none;
-    color:black;
-    font-family: 'Festive', cursive;
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: black;
+  font-family: "Festive", cursive;
 }
-.menu-bar ul .logo{
-    margin-right: 30rem;
-    margin-bottom: 10px;
-    font-size: 18px;
+.menu-bar ul .logo {
+  margin-right: 400px;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
-.logo i{
-   padding-right: 10px;
-   font-size: 25px;
-}
-
-.home a{
-    padding: 15px;
-    font-size: 14px;
-    font-weight: bold;
-}
-.menu-bar ul li{
-    margin:10px;
-    padding:13px;
-}
-.menu-bar ul li a{
-    text-decoration: none;
-    color:black;
-    font-family: 'Festive', cursive;
-   
-}
-.menu-bar ul .menu:hover{
-    background-color: #DDDDF0;
-    border-radius:3px;
+.logo i {
+  padding-right: 10px;
+  font-size: 25px;
 }
 
-
-#content{
-    margin-top: 5%;
-    text-align: center;
+.home a {
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.menu-bar ul li {
+  width: 120px;
+  margin: 10px;
+  padding: 13px;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Festive", cursive;
+}
+.menu-bar ul .menu:hover {
+  background-color: #ddddf0;
+  border-radius: 3px;
+}
+.submenu {
+  display: none;
 }
 
-#menu1, #menu2, #menu3, #menu4, #menu5{
-    visibility: hidden;
+.menu-bar ul li:hover .submenu ul li a:hover {
+  color: red;
+}
+.menu-bar ul li:hover .submenu {
+  display: block;
+  position: absolute;
+  background-color: #ededf5;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+.menu-bar ul li:hover .submenu ul {
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul .menu .submenu ul li:hover {
+  background-color: #ddddf0;
+}
+.menu-bar ul li:hover .submenu ul li {
+  width: 150px;
+  padding: 20px;
+  background: transparent;
+  border-radius: 0;
 }
 
-#menu1.active,#menu2.active,#menu3.active,#menu4.active,#menu5.active{
-    visibility: visible;
+#content {
+  margin-top: 5%;
+  text-align: center;
+}
+
+#menu1,
+#menu2,
+#menu3,
+#menu4,
+#menu5 {
+  visibility: hidden;
+}
+
+#menu1.active,
+#menu2.active,
+#menu3.active,
+#menu4.active,
+#menu5.active {
+  visibility: visible;
+}
+
+#restaurant img {
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+}
+#content img {
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+}
+#content h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+#content h4 {
+  font-family: "Times New Roman", Times, serif;
+  color: #616361;
+}
+.button {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: rgb(247, 247, 247);
+  color: rgb(225, 13, 13);
 }
 
 /* -------------------------------- MENUS ------------------------------------*/
 
-
-#menu1, #menu2, #menu3, #menu4, #menu5{
-    background-color: white;
-    width:70%;
-    border-radius: 10%;
-    height: fit-content;
-    position: absolute;
-    top: 10%;
-    left: 12%;
+#menu1,
+#menu2,
+#menu3,
+#menu4,
+#menu5 {
+  background-color: white;
+  width: 1300px;
+  border-radius: 10%;
+  height: fit-content;
+  position: absolute;
+  top: 10%;
+  left: 12%;
 }
 
-
-#menu1 h1,#menu2 h1, #menu3 h1, #menu4 h1, #menu5 h1{
-    text-align: center;
+#menu1 h1,
+#menu2 h1,
+#menu3 h1,
+#menu4 h1,
+#menu5 h1 {
+  text-align: center;
 }
-.menu-content{
-    display: flex;
-    margin-top: 1%;
-}
-
-.menu-content h4, .menu-content img{
-    padding-left: 5%;
-}
-
-.menu-content a{
-    padding-left: 5%;
+.menu-content {
+  display: flex;
+  margin-top: 1%;
 }
 
-.menu-content img{
-    padding-bottom: 2%;
+.menu-content h4,
+.menu-content img {
+  padding-left: 5%;
+}
+
+.menu-content a {
+  padding-left: 5%;
+}
+
+.menu-content img {
+  padding-bottom: 2%;
 }
 
 #close {
-    position: relative;
-    left: 10%;
+  position: relative;
+  left: 10%;
 }
-
-
-
-
-
-
-
-
 
 /* -------------------------------- CART PAGE ------------------------------------*/
 
-.products-container{
-    max-width: 650px;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 50px;
+.products-container {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
-.product-header{
-    width: 100%;
-    max-width: 650px;
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 4px solid lightgray;
-    margin: 0 auto;
+.product-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgray;
+  margin: 0 auto;
 }
 
-.product-title{
-    width: 45%;
-
+.product-title {
+  width: 45%;
 }
-.product-price{
-    width: 20%;
+.product-price {
+  width: 20%;
 }
-.product-quantity{
-    width: 19.5%;
-}
-
-.price{
-    width: 15%;
-    border-bottom: 4px solid lightgray;
-    display: flex;
-    align-items: center;
+.product-quantity {
+  width: 19.5%;
 }
 
-.quantity{
-    width: 30%;
-    border-bottom: 1px solid lightgray;
-    
-    align-items: center;
-    text-align: center;
+.price {
+  width: 15%;
+  border-bottom: 4px solid lightgray;
+  display: flex;
+  align-items: center;
 }
 
-.total{
-    width: 10%;
-    border-bottom: 4px solid lightgray;
-    align-items: center;
-    text-align: center;
+.quantity {
+  width: 30%;
+  border-bottom: 1px solid lightgray;
 
+  align-items: center;
+  text-align: center;
 }
 
-
-
-.product{
-    width: 55%;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid lightgray;
+.total {
+  width: 10%;
+  border-bottom: 4px solid lightgray;
+  align-items: center;
+  text-align: center;
 }
 
-
-
-.shoppingcart{
-    display: flex;
+.product {
+  width: 55%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
 }
 
-
-#checkbtn{
-    position: relative;
-    left: 50%;
+.shoppingcart {
+  display: flex;
 }
 
-#checkout{
-    width: 15%;
-    margin: 0 auto;
+#checkbtn {
+  position: relative;
+  left: 50%;
 }
 
+#checkout {
+  width: 15%;
+  margin: 0 auto;
+}
 
 /* -------------------------------- Google Map ------------------------------------*/
 
-#googleMap{
-    width: 80%;
-    height: 400px;
-    margin: 20px auto;
+#googleMap {
+  width: 80%;
+  height: 400px;
+  margin: 20px auto;
 }
