@@ -13,7 +13,7 @@ body {
   display: inline-flex;
   list-style: none;
   color: black;
-  font-family: "Festive", cursive;
+  font-family: "UberMove", sans-serif;
 }
 .menu-bar ul .logo {
   margin-right: 30rem;
@@ -38,7 +38,7 @@ body {
 .menu-bar ul li a {
   text-decoration: none;
   color: black;
-  font-family: "Festive", cursive;
+  font-family: "UberMove", sans-serif;
 }
 .menu-bar ul .menu:hover {
   background-color: #ddddf0;
@@ -77,11 +77,11 @@ body {
   vertical-align: middle;
 }
 #content h3 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "UberMove", sans-serif;
   font-size: 20px;
 }
 #content h4 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "UberMove", sans-serif;
   color: #616361;
 }
 .button {
