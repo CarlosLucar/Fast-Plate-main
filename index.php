@@ -16,7 +16,7 @@ $results = mysqli_query($dbc, $query);
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
-    
+
     <title>Fastplate</title>
     <link rel="shortcut icon" type="image/png" href="/img/fastplate.png">
 </head>
@@ -52,7 +52,8 @@ $results = mysqli_query($dbc, $query);
         <?php
         while ($rows = mysqli_fetch_assoc($results)) {
             echo "<div>
-                    <h1>" . $rows['Name'] . "</h1>
+                    <br>
+                    <h1>" . $rows['Name'] . " <img src='img\starvote.png'></h1>
                     <br>
                     <h3><img src='img\bowl.png'>" . $rows['Description'] . "</h2>
                     <h4><img src='img\spoon.png'>" . $rows['Service Options'] . "</h4>
@@ -205,6 +206,39 @@ $results = mysqli_query($dbc, $query);
 
         </div>
     </div>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>About Us</h2>
+                <a href="#">About us</a>
+                <a href="#">Add your restaurant</a>
+                <a href="#">Apply to be our deliver</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Terms of services</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Contact Us</h2>
+                <a href="#">Contact us</a>
+                <a href="#">Support</a>
+                <a href="#">Sponsorship</a>
+                <a href="#">Investors</a>
+                <a href="#">Terms of services</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Social Media</h2>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Youtube</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Join our newsletter</h2>
+                <input type="email" plcaeholder="Enter your email address" id="footer-email">
+            </div>
+
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="menu.js"></script>
