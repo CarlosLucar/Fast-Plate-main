@@ -12,19 +12,57 @@ body{
 }
 /* -------------------------------- NAV BAR ------------------------------------*/
 
-.navbar-brand{
-    font-size: 3rem;
+.navbar-nav {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
   }
   
-  .navbar-nav{
-    font-size: 1.5rem;
+  .navbar {
+    background-color: #f0cec3;
   }
   
-  .nav-item{
+  .navbar-nav li {
+    padding-right: 50px;
+  }
+  
+  .navbar-brand {
+    padding-left: 30px;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
+  
+  .nav-item {
     padding-right: 1rem;
   }
   
+  .btn {
+    background-color: #d63838;
+    border-color: #d63838;
+    border-radius: 40px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+  }
   
+  .btn-primary:hover {
+    background-color: white;
+    color: #d63838;
+    border-color: #d63838;
+    box-shadow: none;
+  }
+  
+  .btn-primary:active {
+    background-color: white !important;
+    color: #d63838 !important;
+    border-color: #d63838 !important;
+    box-shadow: none !important;
+  }
+  
+  .brand {
+    font-size: 20px;
+  }
   
   /* -------------------------------- NAV BAR ------------------------------------*/
 .form{

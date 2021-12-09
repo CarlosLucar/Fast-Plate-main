@@ -12,22 +12,26 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/index.php">FastPlate</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item menu"><a class="nav-link active" href="/frontend/aboutus/aboutus.php">About Us</a></li>
-                <li class="nav-item menu"><a class="nav-link active" href="/frontend/support/support.php">Contact</a></li>
-                <li class="nav-item menu"><a class="nav-link active" href="/frontend/contact/contact.php">Become a Partner</a></li>
-                <li class="nav-item menu"><a class="nav-link active" href="/frontend/register/registerform.php">Register</a></li>
-                <li class="nav-item menu"><a class="nav-link active" href="#">Login</a></li>
+<nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="index.php"><img src="img/logo.png" alt="logo" width="60"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-            </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item brand">
+                <a class="nav-link brand" href="/index.php">FastPlate</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item menu"><a class="nav-link" href="/frontend/aboutus/aboutus.php">About Us</a></li>
+            <li class="nav-item menu"><a class="nav-link" href="/frontend/support/support.php">Contact</a></li>
+            <li class="nav-item menu"><a class="nav-link" href="/frontend/contact/contact.php">Become a Partner</a></li>
+            <li class="nav-item menu"><a class="nav-link" href="#">Login</a></li>
+            <li class="nav-item menu"> <a class="btn btn-primary btn-lg" href="/frontend/register/registerform.php" role="button">Sign Up</a></li>
+            
+        </ul>
         </div>
     </nav>
 
