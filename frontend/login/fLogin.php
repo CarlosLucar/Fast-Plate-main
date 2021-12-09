@@ -54,7 +54,7 @@
 
         <button type="submit" class="btn btn-primary btn-lg">Login</button>
     </form>
-        </div>
+</div>
 
     <div class="footer-container">
         <div class="footer">

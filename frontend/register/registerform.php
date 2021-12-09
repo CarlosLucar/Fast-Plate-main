@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
-    <title>Fastplate:Register</title>
+    <title>Sign Up</title>
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="index.php"><img src="image/logo.png" alt="logo" width="60"></a>
+        <a class="navbar-brand" href="/index.php"><img src="image/logo.png" alt="logo" width="60"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,44 +39,24 @@
         </div>
     </nav>
 
+    <div class="signup-form">
     <form action="/backend/register/register.php" method="POST" class="form">
-        <div class="signup">Sign up</div>
-        <br><br>
-        <div class="form-group">
-            <span class="input4">
-                <label for="fname"><b>Full Name: </b></label><br>
-                <br>
-            </span>
-            <input class="registerinput" type="text" name="fname" id="display" placeholder="Full name" />
-        </div>
-        <div class="form-group">
-            <span class="input3">
-                <label for="uname"><b>User Name: </b></label><br>
-                <br>
-            </span>
-            <input class="registerinput" type="text" name="uname" id="display" placeholder="Display name" />
-        </div>
-        </br>
-        <div class="form-group">
-            <span class="input1">
-                <label for="email"><b>Email: </b></label><br>
-                <br>
-            </span>
-            <input class="registerinput" type="email" name="email" id="email" placeholder="Email" />
-        </div>
-        </br>
-        <div class="form-group">
-            <span class="input2">
-                <label for="password"><b>Password: </b></label><br>
-                <br>
-            </span>
-            <input class="registerinput" type="password" name="password" id="password" placeholder="Password" />
-        </div>
-        </br>
-        <p><input type="submit" value="Create my account" class="buttonregister" /></p>
+        <h2>Sign Up</h2>
+            <label for="fname">Full Name</label>
+            <input type="text" name="fname" id="display" placeholder="Full name" /><br>
 
+            <label for="uname">Username</label>
+            <input type="text" name="uname" id="display" placeholder="Username" /><br>
 
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" /><br>
+                
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" /><br>
+
+            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
     </form>
+</div>
 
     <div class="footer-container">
         <div class="footer">
@@ -111,6 +92,15 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="menu.js"></script>
+
+    <script src="cart.js"></script>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </html>
