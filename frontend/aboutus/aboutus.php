@@ -46,6 +46,7 @@
         <p>FastPlate is on a mission to make food delivery <br> more effective and cost-efficient.</p>
         <p>We help restaurants reach more customers <br> while driving satisfaction to everyone's door.</p>
     </div>
+    
     <div id="body1">
             <h1>Our Values</h1>
             <p>FastPlate believes in creating opportunities for people to earn and <br> thrive. All members of our community deserve peace of mind.</p>

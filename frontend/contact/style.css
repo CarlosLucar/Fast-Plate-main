@@ -1,130 +1,128 @@
-body{
-    justify-content:center;
-    align-items: center;
-    height: 100vh;
-    background: url(image/back.jpg) no-repeat center fixed;
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(image/back.jpg) no-repeat center fixed;
 }
-*{
-    
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 /* -------------------------------- NAV BAR ------------------------------------*/
 
 .navbar-nav {
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-  }
-  
-  .navbar {
-    background-color: #f0cec3;
-  }
-  
-  .navbar-nav li {
-    padding-right: 50px;
-  }
-  
-  .navbar-brand {
-    padding-left: 30px;
-  }
-  
-  .navbar-light .navbar-nav .nav-link {
-    color: black;
-  }
-  
-  .nav-item {
-    padding-right: 1rem;
-  }
-  
-  .btn {
-    background-color: #d63838;
-    border-color: #d63838;
-    border-radius: 40px;
-    font-family: "Nunito", sans-serif;
-    font-size: 16px;
-  }
-  
-  .btn-primary:hover {
-    background-color: white;
-    color: #d63838;
-    border-color: #d63838;
-    box-shadow: none;
-  }
-  
-  .btn-primary:active {
-    background-color: white !important;
-    color: #d63838 !important;
-    border-color: #d63838 !important;
-    box-shadow: none !important;
-  }
-  
-  .brand {
-    font-size: 20px;
-  }
-  
-  /* -------------------------------- NAV BAR ------------------------------------*/
-form{
-    width:500px;
-    border:2px solid #ccc;
-    padding:30px;
-    background:#fff;
-    border-radius:15px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 1000px;
-}
-h2{
-    text-align: center;
-    margin-bottom: 40px;
-    background: linear-gradient(75deg,#1fcfff,#0ca2ff);
-}
-input{
-    display:block;
-    border:2px solid #ccc;
-    width:95%;
-    padding:10px;
-    margin:10px auto;
-    border-radius:5px;
-}
-label{
-    color:black;
-    font-size:18px;
-    padding:10px;
-}
-button{
-    float:right;
-    background: #555;
-    padding:10px 45px;
-    color:#fff;
-    border-radius: 5px;
-    margin-right:10px;
-    border:none;
-    margin-right: 150px;
-    line-height: 20px;
-    margin-top:10px;
-    background: linear-gradient(75deg,#1fcfff,#0ca2ff);
-}
-button:hover{
-    opacity:.7;
-}
-.error{
-    background:red;
-    color:black;
-    padding:10px;
-    width:95%;
-    border-radius:5px;
-    margin:20px auto;
-}
-#country{
-    margin-left: 12px;
-    padding:12px;
-    border: 1px solid #ccc;
-    padding-right: 320px;
-    line-height: 30px;
-}
-#subject{
-    padding-right: 280px;
-    margin-left: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
 }
 
+.navbar {
+  background-color: #f0cec3;
+}
+
+.navbar-nav li {
+  padding-right: 50px;
+}
+
+.navbar-brand {
+  padding-left: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+.nav-item {
+  padding-right: 1rem;
+}
+
+.btn {
+  background-color: #d63838;
+  border-color: #d63838;
+  border-radius: 40px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #d63838;
+  border-color: #d63838;
+  box-shadow: none;
+}
+
+.btn-primary:active {
+  background-color: white !important;
+  color: #d63838 !important;
+  border-color: #d63838 !important;
+  box-shadow: none !important;
+}
+
+.brand {
+  font-size: 20px;
+}
+
+/* -------------------------------- NAV BAR ------------------------------------*/
+form {
+  width: 500px;
+  border: 2px solid #ccc;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1000px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(75deg, #1fcfff, #0ca2ff);
+}
+input {
+  display: block;
+  border: 2px solid #ccc;
+  width: 95%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+label {
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+}
+button {
+  float: right;
+  background: #555;
+  padding: 10px 45px;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: none;
+  margin-right: 150px;
+  line-height: 20px;
+  margin-top: 10px;
+  background: linear-gradient(75deg, #1fcfff, #0ca2ff);
+}
+button:hover {
+  opacity: 0.7;
+}
+.error {
+  background: red;
+  color: black;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+#country {
+  margin-left: 12px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  padding-right: 320px;
+  line-height: 30px;
+}
+#subject {
+  padding-right: 280px;
+  margin-left: 10px;
+}
