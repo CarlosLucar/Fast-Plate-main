@@ -3,53 +3,62 @@
   margin: 0;
 }
 body {
-  background-color: #eff9ff;
-}
-.menu-bar {
-  background-color: #ededf5;
-  text-align: center;
-}
-.menu-bar ul {
-  display: inline-flex;
-  list-style: none;
-  color: black;
-  font-family: "UberMove", sans-serif;
-}
-.menu-bar ul .logo {
-  margin-right: 30rem;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-.logo i {
-  padding-right: 10px;
-  font-size: 25px;
+  background-color: #f2faff;
 }
 
-.home a {
-  padding: 15px;
-  font-size: 14px;
-  font-weight: bold;
+.navbar {
+  background-color: #fcede9;
 }
-.menu-bar ul li {
-  width: 120px;
-  margin: 10px;
-  padding: 13px;
+
+.navbar-nav {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
 }
-.menu-bar ul li a {
-  text-decoration: none;
+
+.navbar-nav li {
+  padding-right: 50px;
+}
+
+.navbar-brand {
+  padding-left: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
   color: black;
-  font-family: "UberMove", sans-serif;
 }
-.menu-bar ul .menu:hover {
-  background-color: #ddddf0;
-  border-radius: 3px;
+
+.btn {
+  background-color: #d63838;
+  border-color: #d63838;
+  border-radius: 40px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #d63838;
+  border-color: #d63838;
+  box-shadow: none;
+}
+
+.btn-primary:active {
+  background-color: white !important;
+  color: #d63838 !important;
+  border-color: #d63838 !important;
+  box-shadow: none !important;
+}
+
+.brand {
+  font-size: 20px;
 }
 
 #content {
   margin-top: 5%;
   text-align: center;
-  background: rgba(76, 175, 80, 0.3);
+  background: #fcede9;
 }
 
 #menu1,
@@ -68,11 +77,17 @@ body {
   visibility: visible;
 }
 
+#restaurant {
+  padding-top: 70px;
+  text-align: center;
+}
+
 #restaurant img {
   height: 200px;
   width: 300px;
   border-radius: 20px;
 }
+
 #content img {
   height: 30px;
   width: 30px;
