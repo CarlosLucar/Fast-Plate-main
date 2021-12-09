@@ -46,10 +46,10 @@ $results = mysqli_query($dbc, $query);
                     <a class="nav-link" href="/frontend/aboutus/aboutus.php">About Us<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/frontend/support/support.php">Become Partner</a>
+                    <a class="nav-link" href="/frontend/contact/contact.php">Become Partner</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/frontend/contact/contact.php">Support</a>
+                    <a class="nav-link" href="/frontend/support/support.php">Support</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/frontend/login/fLogin.php">Sign In</a>
@@ -58,7 +58,7 @@ $results = mysqli_query($dbc, $query);
                     <a class="btn btn-primary btn-lg" href="/frontend/register/registerform.php" role="button">Sign Up</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/frontend/login/fLogin.php">Cart <span>0</span></a>
+                    <a class="nav-link" href="/cart.php">Cart <span>0</span></a>
                 </li>
             </ul>
         </div>
