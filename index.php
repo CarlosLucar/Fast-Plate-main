@@ -234,6 +234,7 @@ $results = mysqli_query($dbc, $query);
             <div class="footer-email-form">
                 <h2>Join our newsletter</h2>
                 <input type="email" plcaeholder="Enter your email address" id="footer-email">
+                <input type="submit" value="Sign up" id="footer-email-btn">
             </div>
 
         </div>
