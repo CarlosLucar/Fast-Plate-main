@@ -10,13 +10,29 @@ body{
     margin:0; 
     padding:0;
 }
+/* -------------------------------- NAV BAR ------------------------------------*/
+
+.navbar-brand{
+    font-size: 3rem;
+  }
+  
+  .navbar-nav{
+    font-size: 1.5rem;
+  }
+  
+  .nav-item{
+    padding-right: 1rem;
+  }
+  
+  
+  
+  /* -------------------------------- NAV BAR ------------------------------------*/
 .form{
     margin: auto;
     /* margin-top:100%;  */
     width:30%;
     border:2px solid #ccc;
     padding:10px;
-    margin-top: 10%;
     background-color: #fff;
     border-radius: 15px;
    

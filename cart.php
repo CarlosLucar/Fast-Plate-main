@@ -6,33 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
         <title>Shopping Cart</title>
         <link rel="shortcut icon" type="image/png" href="/img/fastplate.png">
     </head>
 <body>
-    <div class="menu-bar">
-        <ul>
-            <li class="logo"><i class="w3-margin-left fa fa-home"></i><a href="index.php"> fastplate</a></li>
 
-            <li class="menu"><a href="#">Food Menu</a>
-                <div class="submenu">
-                    <ul>
-                        <li><a href="#">Sushi</a></li>
-                        <li><a href="#">Drink</a></li>
-                        <li><a href="#">Vegetable</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="menu"><a href="#">About Us</a></li>
-            <li class="menu"><a href="#">Become Partner</a></li>
-            <li class="menu"><a href="#">Contact support</a></li>
-            <li class="menu"><a href="/frontend/register/registerform.php">Register</a></li>
-            <li class="menu"><a href="/frontend/login/fLogin.php">Login</a></li>
-            <li class="menu"><a href="#">Cart <span>0</span></a></li>
-        </ul>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.php">FastPlate</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/aboutus/aboutus.php">About Us</a></li>
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/support/support.php">Become Partner</a></li>
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/contact/contact.php">Contact support</a></li>
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/register/registerform.php">Register</a></li>
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/login/fLogin.php">Login</a></li>
+                <li class="nav-item menu"><a class= "nav-link active" href="#">Cart <span>0</span></a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+   
 
     <div class="products-container">
         <div class="product-header">

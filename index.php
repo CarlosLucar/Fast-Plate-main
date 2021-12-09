@@ -14,6 +14,7 @@ $results = mysqli_query($dbc, $query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 
@@ -25,19 +26,26 @@ $results = mysqli_query($dbc, $query);
     <!-- <a href="/fastplate/frontend/login/index.php">Login</a><br>
     <a href="/fastplate/frontend/register/registerform.php">Register</a>
     <h1>Welcome To The Main Page</h1> -->
-    <div class="menu-bar">
-        <ul>
-            <li class="logo"><i class="w3-margin-left fa fa-home"></i><a href="#"> fastplate</a></li>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FastPlate</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/aboutus/aboutus.php">About Us</a></li>
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/support/support.php">Contact</a></li>
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/contact/contact.php">Become a Partner</a></li>
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/register/registerform.php">Register</a></li>
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/login/fLogin.php">Login</a></li>
+                <li class="nav-item menu"><a class= "nav-link active" href="/cart.php">Cart <span>0</span></a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
 
-            <li class="menu"><a href="/frontend/aboutus/aboutus.php">About Us</a></li>
-            <li class="menu"><a href="/frontend/support/support.php">Become Partner</a></li>
-            <li class="menu"><a href="/frontend/contact/contact.php">Contact support</a></li>
-            <li class="menu"><a href="/frontend/register/registerform.php">Register</a></li>
-            <li class="menu"><a href="/frontend/login/fLogin.php">Login</a></li>
-            <li class="menu"><a href="/cart.php">Cart <span>0</span></a></li>
-        </ul>
-    </div>
 
 
     <div id="restaurant">
@@ -47,6 +55,7 @@ $results = mysqli_query($dbc, $query);
         <img src='img\cava.png'>
         <img src='img\kungfutea.png'>
     </div>
+
     <div id="content">
 
         <?php
@@ -95,17 +104,25 @@ $results = mysqli_query($dbc, $query);
     ?>
     <div class="container">
         <div id="menu1">
-            <h1>Bao Bao Cafe<br>Menu</h1>
-            <a id="close 1" href="#/" style='position: relative;left: 88%;'>Close</a>
+            <div class="menu-header">
+                <h1>Bao Bao Cafe<br>Menu</h1>
+                <a class="btn btn-primary btn-sm" id="close 1" href="#/" style='position: relative;left: 88%;'>Close</a>
+            </div>
             <?php
             while ($rows = mysqli_fetch_assoc($baoResults)) {
                 echo "<div class='menu-content'>
-                    <img src=img" . $rows['Item img'] . "></img>
-                    <h4>" . $rows['Item name'] . "</h4>
-                    <h4>" . $rows['Item description'] . "</h4>
-                    <h4>" . $rows['calories'] . " calories</h4>
-                    <h4> $" . $rows['Item price'] . "</h4>
-                    <a class='add-cart " . $rows['ID'] . "' href='#/'> Add Cart</a><br><br>
+
+                        <div class='card' style='width: 16rem;'>
+                            <img src=img". $rows['Item img']." class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                            <h5 class='card-title'>". $rows['Item name']."</h5>
+                            <p class='card-text'>". $rows['Item description']."</p>
+                            <p class='card-text'>". $rows['calories']." calories</p>
+                            <p class='card-text'><strong> $". $rows['Item price']."</strong></p>
+                            <a href='#/' class='btn btn-primary add-cart ". $rows['ID'] ."'>Add Cart</a>
+                            </div>
+                        </div>
+
                     
                     
                     </div>"
@@ -116,17 +133,24 @@ $results = mysqli_query($dbc, $query);
         </div>
 
         <div id="menu2">
-            <h1>Little Basil<br>Menu</h1>
-            <a id="close 2" href="#/" style='position: relative;left: 88%;'>Close</a>
+            <div>
+                <h1>Little Basil<br>Menu</h1>
+                <a class="btn btn-primary btn-sm" id="close 2" href="#/" style='position: relative;left: 88%;'>Close</a>
+            </div>
             <?php
             while ($rows = mysqli_fetch_assoc($lilResults)) {
                 echo "<div class='menu-content'>
-                    <img src=img" . $rows['Item img'] . "></img>
-                    <h4>" . $rows['Item name'] . "</h4>
-                    <h4>" . $rows['Item description'] . "</h4>
-                    <h4>" . $rows['calories'] . " calories </h4>
-                    <h4> $" . $rows['Item price'] . "</h4>
-                    <a class='add-cart " . $rows['ID'] . "' href='#/'> Add Cart</a><br><br>
+
+                    <div class='card' style='width: 16rem;'>
+                            <img src=img". $rows['Item img']." class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                            <h5 class='card-title'>". $rows['Item name']."</h5>
+                            <p class='card-text'>". $rows['Item description']."</p>
+                            <p class='card-text'>". $rows['calories']." calories</p>
+                            <p class='card-text'><strong> $". $rows['Item price']."</strong></p>
+                            <a href='#/' class='btn btn-primary add-cart ". $rows['ID'] ."'>Add Cart</a>
+                            </div>
+                        </div>
                     
                     
                     </div>"
@@ -139,17 +163,25 @@ $results = mysqli_query($dbc, $query);
 
 
         <div id="menu3">
-            <h1>Di Di Dumpling<br>Menu</h1>
-            <a id="close 3" href="#/" style='position: relative;left: 88%;'>Close</a>
+            <div>
+                <h1>Di Di Dumpling<br>Menu</h1>
+                <a class="btn btn-primary btn-sm" id="close 3" href="#/" style='position: relative;left: 88%;'>Close</a>
+            </div>
             <?php
             while ($rows = mysqli_fetch_assoc($diResults)) {
                 echo "<div class='menu-content'>
-                    <img src=img" . $rows['Item img'] . "></img>
-                    <h4>" . $rows['Item name'] . "</h4>
-                    <h4>" . $rows['Item description'] . "</h4>
-                    <h4>" . $rows['calories'] . " calories </h4>
-                    <h4> $" . $rows['Item price'] . "</h4>
-                    <a class='add-cart " . $rows['ID'] . "' href='#/'> Add Cart</a><br><br>
+                    
+                        <div class='card' style='width: 16rem;'>
+                            <img src=img". $rows['Item img']." class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>". $rows['Item name']."</h5>
+                                <p class='card-text'>". $rows['Item description']."</p>
+                                <p class='card-text'>". $rows['calories']." calories</p>
+                                <p class='card-text'><strong> $". $rows['Item price']."</strong></p>
+                                <a href='#/' class='btn btn-primary add-cart ". $rows['ID'] ."'>Add Cart</a>
+                            </div>
+                        </div>
+
                     
                     
                     </div>"
@@ -161,17 +193,25 @@ $results = mysqli_query($dbc, $query);
 
 
         <div id="menu4">
-            <h1>Jimmy's House<br>Menu</h1>
-            <a id="close 4" href="#/" style='position: relative;left: 88%;'>Close</a>
+            <div>
+                <h1>Jimmy's House<br>Menu</h1>
+                <a class="btn btn-primary btn-sm" id="close 4" href="#/" style='position: relative;left: 88%;'>Close</a>
+            </div>
             <?php
             while ($rows = mysqli_fetch_assoc($jimResults)) {
                 echo "<div class='menu-content'>
-                    <img src=img" . $rows['Item img'] . "></img>
-                    <h4>" . $rows['Item name'] . "</h4>
-                    <h4>" . $rows['Item description'] . "</h4>
-                    <h4>" . $rows['calories'] . " calories </h4>
-                    <h4> $" . $rows['Item price'] . "</h4>
-                    <a class='add-cart " . $rows['ID'] . "' href='#/'> Add Cart</a><br><br>
+
+
+                    <div class='card' style='width: 16rem;'>
+                            <img src=img". $rows['Item img']." class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>". $rows['Item name']."</h5>
+                                <p class='card-text'>". $rows['Item description']."</p>
+                                <p class='card-text'>". $rows['calories']." calories</p>
+                                <p class='card-text'><strong> $". $rows['Item price']."</strong></p>
+                                <a href='#/' class='btn btn-primary add-cart ". $rows['ID'] ."'>Add Cart</a>
+                            </div>
+                    </div>
                     
                     
                     </div>"
@@ -185,17 +225,24 @@ $results = mysqli_query($dbc, $query);
 
 
         <div id="menu5">
-            <h1>CAVA<br>Menu</h1>
-            <a id="close 5" href="#/" style='position: relative;left: 88%;'>Close</a>
+            <div>
+                <h1>CAVA<br>Menu</h1>
+                <a class="btn btn-primary btn-sm" id="close 5" href="#/" style='position: relative;left: 88%;'>Close</a>
+            </div>
             <?php
             while ($rows = mysqli_fetch_assoc($cavResults)) {
                 echo "<div class='menu-content'>
-                    <img src=img" . $rows['Item img'] . "></img>
-                    <h4>" . $rows['Item name'] . "</h4>
-                    <h4>" . $rows['Item description'] . "</h4>
-                    <h4>" . $rows['calories'] . " calories </h4>
-                    <h4> $" . $rows['Item price'] . "</h4>
-                    <a class='add-cart " . $rows['ID'] . "' href='#/'> Add Cart</a><br><br>
+                    
+                    <div class='card' style='width: 16rem;'>
+                            <img src=img". $rows['Item img']." class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>". $rows['Item name']."</h5>
+                                <p class='card-text'>". $rows['Item description']."</p>
+                                <p class='card-text'>". $rows['calories']." calories</p>
+                                <p class='card-text'><strong> $". $rows['Item price']."</strong></p>
+                                <a href='#/' class='btn btn-primary add-cart ". $rows['ID'] ."'>Add Cart</a>
+                            </div>
+                    </div>
                     
                     
                     </div>"

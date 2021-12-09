@@ -1,6 +1,5 @@
 body{
     background-color:#eff9ff;
-    display:flex;
     justify-content:center;
     align-items: center;
     height: 100vh;
@@ -9,12 +8,33 @@ body{
     font-family: sans-serif;
     box-sizing: border-box;
 }
+/* -------------------------------- NAV BAR ------------------------------------*/
+
+.navbar-brand{
+    font-size: 3rem;
+  }
+  
+  .navbar-nav{
+    font-size: 1.5rem;
+  }
+  
+  .nav-item{
+    padding-right: 1rem;
+  }
+  
+  
+  
+  /* -------------------------------- NAV BAR ------------------------------------*/
 form{
     width:500px;
     border:2px solid #ccc;
     padding:30px;
     background:#fff;
     border-radius:15px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
 }
 h2{
     text-align: center;

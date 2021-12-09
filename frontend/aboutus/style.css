@@ -4,6 +4,24 @@ body{
     position: relative; 
     background-color: white;
 }
+/* -------------------------------- NAV BAR ------------------------------------*/
+
+.navbar-brand{
+    font-size: 3rem;
+  }
+  
+  .navbar-nav{
+    font-size: 1.5rem;
+  }
+  
+  .nav-item{
+    padding-right: 1rem;
+  }
+  
+  
+  
+  /* -------------------------------- NAV BAR ------------------------------------*/
+  
 #front p{
     color:black;
     text-shadow: 2px 2px aqua;

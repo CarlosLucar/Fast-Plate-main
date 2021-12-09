@@ -6,46 +6,24 @@
 body {
   background-color: #eff9ff;
 }
-.menu-bar {
-  background-color: #ededf5;
-  text-align: center;
-}
-.menu-bar ul {
-  display: inline-flex;
-  list-style: none;
-  color: black;
-  font-family: "UberMove", sans-serif;
-}
-.menu-bar ul .logo {
-  margin-right: 30rem;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-.logo i {
-  padding-right: 10px;
-  font-size: 25px;
+
+/* -------------------------------- NAV BAR ------------------------------------*/
+
+.navbar-brand{
+  font-size: 3rem;
 }
 
-.home a {
-  padding: 15px;
-  font-size: 14px;
-  font-weight: bold;
+.navbar-nav{
+  font-size: 1.5rem;
 }
-.menu-bar ul li {
-  width: 120px;
-  margin: 10px;
-  padding: 13px;
+
+.nav-item{
+  padding-right: 1rem;
 }
-.menu-bar ul li a {
-  text-decoration: none;
-  color: black;
-  font-family: "UberMove", sans-serif;
-}
-.menu-bar ul .menu:hover {
-  background-color: #ddddf0;
-  border-radius: 3px;
-}
+
+
+/* -------------------------------- NAV BAR ------------------------------------*/
+
 
 #content {
   margin-top: 5%;
@@ -67,6 +45,10 @@ body {
 #menu4.active,
 #menu5.active {
   visibility: visible;
+}
+
+#restaurant{
+  text-align: center;
 }
 
 #restaurant img {
@@ -195,13 +177,17 @@ body {
 #menu4,
 #menu5 {
   background-color: white;
-  width: 1300px;
-  border-radius: 10%;
+  width: 69.1%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 2%;
   height: fit-content;
-  position: absolute;
+  position: fixed;
   top: 10%;
-  left: 12%;
 }
+
+
+
 
 #menu1 h1,
 #menu2 h1,
@@ -211,7 +197,7 @@ body {
   text-align: center;
 }
 .menu-content {
-  display: flex;
+  display: inline-flex;
   margin-top: 1%;
 }
 
@@ -302,7 +288,8 @@ body {
 
 #checkout {
   width: 15%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* -------------------------------- Google Map ------------------------------------*/

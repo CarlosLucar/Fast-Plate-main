@@ -2,8 +2,24 @@
     margin:0;
     padding: 0;
     box-sizing:border-box;
-    font-family: 'Courier New', Courier, monospace;
+
 }
+/* -------------------------------- NAV BAR ------------------------------------*/
+
+.navbar-brand{
+    font-size: 3rem;
+  }
+  
+  .navbar-nav{
+    font-size: 1.5rem;
+  }
+  
+  .nav-item{
+    padding-right: 1rem;
+  }
+  
+  
+  /* -------------------------------- NAV BAR ------------------------------------*/
 .contact{
     position:relative;
     min-height:100vh;
