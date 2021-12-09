@@ -61,7 +61,7 @@
                 <label for="email"><b>Email: </b></label><br>
                 <br>
             </span>
-            <input class="registerinput" type="text" name="email" id="email" placeholder="Email" />
+            <input class="registerinput" type="email" name="email" id="email" placeholder="Email" />
         </div>
         </br>
         <div class="form-group">
