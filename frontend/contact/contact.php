@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item brand">
-                <a class="nav-link brand" href="index.php">FastPlate</a>
+                <a class="nav-link brand" href="/index.php">FastPlate</a>
             </li>
         </ul>
         <ul class="navbar-nav">
