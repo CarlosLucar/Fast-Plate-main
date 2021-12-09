@@ -5,73 +5,61 @@
 body{
     background-color:#eff9ff;
 }
-.menu-bar{
-    background-color: #EDEDF5;
-    text-align: center;
-}
-.menu-bar ul{
-    display:inline-flex;
-    list-style:none;
-    color:black;
-    font-family: 'Festive', cursive;
-}
-.menu-bar ul .logo{
-    margin-right: 400px;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-.logo i{
-   padding-right: 10px;
-   font-size: 25px;
-}
-
-.home a{
-    padding: 15px;
-    font-size: 14px;
-    font-weight: bold;
-}
-.menu-bar ul li{
-    width:120px;
-    margin:10px;
-    padding:13px;
-}
-.menu-bar ul li a{
-    text-decoration: none;
-    color:black;
-    font-family: 'Festive', cursive;
-   
-}
-.menu-bar ul .menu:hover{
-    background-color: #DDDDF0;
-    border-radius:3px;
-}
-.submenu{
-    display: none;
-}
-
-.menu-bar ul li:hover .submenu ul li a:hover{
-    color:red;
-    
-}
-.menu-bar ul li:hover .submenu{
-    display: block;
-    position: absolute;
-    background-color: #EDEDF5;
-    margin-top: 15px;
-    margin-left: -15px;
-}
-.menu-bar ul li:hover .submenu ul{
-    display: block;
-    margin:10px;
-}
-.menu-bar ul .menu .submenu ul li:hover{
-    background-color: #DDDDF0;
-
-}
-.menu-bar ul li:hover .submenu ul li{
-    width:150px;
-    padding:20px;
-    background:transparent;
-    border-radius: 0;
-   
-}
+.navbar-nav {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  .navbar {
+    background-color: #f8d9ce;
+  }
+  
+  .navbar-nav li {
+    padding-right: 50px;
+  }
+  
+  .navbar-brand {
+    padding-left: 30px;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
+  
+  .nav-item {
+    padding-right: 1rem;
+  }
+  
+  .btn {
+    background-color: #d63838;
+    border-color: #d63838;
+    border-radius: 40px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+  }
+  
+  .btn-primary:hover {
+    background-color: white;
+    color: #d63838;
+    border-color: #d63838;
+    box-shadow: none;
+  }
+  
+  .btn-primary:active {
+    background-color: white !important;
+    color: #d63838 !important;
+    border-color: #d63838 !important;
+    box-shadow: none !important;
+  }
+  
+  .btn-primary:focus {
+    background-color: #d63838;
+    border-color: #d63838;
+    box-shadow: none;
+  }
+  
+  .brand {
+    font-size: 20px;
+  }
+  
