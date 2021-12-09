@@ -169,9 +169,9 @@ body {
 /* -------------------------------- CART PAGE ------------------------------------*/
 
 .products-container {
-  max-width: 650px;
+  max-width: 60%;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: auto auto;
   margin-top: 50px;
 }
 
@@ -237,6 +237,26 @@ body {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#itemname{
+  max-width: 5.5rem;
+}
+
+#itemprice{
+  width: 12rem;
+}
+#itemquantity{
+  position: relative;
+  left: 5%;
+}
+#itemtotal{
+  position: relative;
+  left: 23%;
+}
+#itemremove{
+  position: relative;
+  left: 20%;
 }
 
 /* -------------------------------- Google Map ------------------------------------*/

@@ -272,18 +272,36 @@ function displayCart(){
 
 
     if(cartItems && productContainer ){
-        productContainer.innerHTML = '';
+        productContainer.innerHTML = `
+        <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+            </tr>
+        </thead>
+        </table>
+        
+        `;
         Object.values(cartItems).map(item =>{
             productContainer.innerHTML += `
-            <div class="shoppingcart">
-                <div class="product">
-                    <span>${item.name}</span>
-                </div>
-                <div class="price">${item.price.toFixed(2)}</div>
-                <div class="quantity"><span>${item.inCart}</span></div>
-                <div class="total">$${item.inCart * item.price}</div>
-                <a class="remove" onclick='removeItem("${item.tag}")'href="#/">Remove</a>
-            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                    <td scope="row" id="itemname"><span>${item.name}</span></td>
+                    <td scope="row" id="itemprice">${item.price.toFixed(2)}</td>
+                    <td scope="row" id="itemquantity">${item.inCart}</td>
+                    <td scope="row" id="itemtotal">$${item.inCart * item.price}</td>
+                    <td scope="row" id="itemremove"><a class="remove" onclick='removeItem("${item.tag}")'href="#/">Remove</a></td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+
+
             `;
         });
 
