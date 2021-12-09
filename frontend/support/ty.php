@@ -18,7 +18,7 @@
 <body>
 
 <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="../index.php"><img src="image/logo.png" alt="logo" width="60"></a>
+        <a class="navbar-brand" href="/index.php"><img src="image/logo.png" alt="logo" width="60"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item brand">
-                <a class="nav-link brand" href="../index.php">FastPlate</a>
+                <a class="nav-link brand" href="/index.php">FastPlate</a>
             </li>
         </ul>
         <ul class="navbar-nav">
