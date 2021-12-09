@@ -74,7 +74,7 @@ $results = mysqli_query($dbc, $query);
                     <h4><img src='img\spoon.png'>" . $rows['Service Options'] . "</h4>
                     <h4><img src='img\addresslogo.png'>" . $rows['Address'] . "</h4>
                     <h4><img src='img\phone.jpg'>" . $rows['Phone'] . "</h4><br>
-                    <button type='button' class='button' id='btn " . $rows['ID'] . "' > Order </button>
+                    <button type='button' class='button btn btn-primary btn-lg' id='btn " . $rows['ID'] . "' > Order </button>
                     <br>
                     <br>
                     <br>
