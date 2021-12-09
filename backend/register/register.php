@@ -44,13 +44,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         echo "<h1>error!</h1>";
         echo "<p>The following errors have occured: </br>";
-        // header("Refresh:3, URL=reform.php");
+        header("Refresh:3, URL=/frontend/register/registerform.php");
         foreach ($errors as $item) {
             echo "$item<br/>";
         }
 
         echo "Please try again!</p>";
-        // header("Refresh:3, URL=reform.php");
+        header("Refresh:3, URL=/frontend/register/registerform.php");
     }
 
     mysqli_close($dbc);
