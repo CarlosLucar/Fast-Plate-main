@@ -22,8 +22,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item menu"><a class="nav-link active" href="/frontend/aboutus/aboutus.php">About Us</a></li>
-                <li class="nav-item menu"><a class="nav-link active" href="/frontend/support/support.php">Become Partner</a></li>
-                <li class="nav-item menu"><a class="nav-link active" href="/frontend/contact/contact.php">Contact support</a></li>
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/support/support.php">Contact support</a></li>
+                <li class="nav-item menu"><a class="nav-link active" href="/frontend/contact/contact.php">Become a Partner</a></li>
                 <li class="nav-item menu"><a class="nav-link active" href="/frontend/register/registerform.php">Register</a></li>
                 <li class="nav-item menu"><a class="nav-link active" href="/frontend/login/fLogin.php">Login</a></li>
                 <li class="nav-item menu"><a class= "nav-link active" href="#">Cart <span>0</span></a></li>
@@ -44,27 +44,80 @@
             
         </div>
     </div>
+
+
+
+    
+
+
+
+
+
+
     <div id="checkout">
-        <form>
-            <label for="fname"> First Name:</label><br>
-            <input type="text" id="fname"><br>
 
-            <label for="lname"> Last Name:</label><br>
-            <input type="text" id="lname"><br>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="fname"  required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lname"  required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">E-mail</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please type a valid E-mail.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phone" required>
+                <div class="invalid-feedback">
+                  Please provide a valid Phone Number.
+                </div>
+              </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" required>
+              <div class="invalid-feedback">
+                Please provide a valid Address.
+              </div>
+            </div>
+            
 
-            <label for="phone"> Phone Number:</label><br>
-            <input type="text" id="phone"><br>
+            <div class="col-12">
+              <button id="order" onclick="calcRoute();" class="btn btn-primary" type="submit" onsubmit="return false">Submit form</button>
+            </div>
+          </form>
 
-            <label for="email"> Email:</label><br>
-            <input type="text" id="email"><br>
 
-            <label for="address"> Address:</label><br>
-            <input type="text" id="address"><br>
 
-        </form>
 
-        <br>
-        <button id="order" onclick="calcRoute();">Order</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
 
 
@@ -77,9 +130,10 @@
 
     <div id="googleMap"></div>
 
-
+    
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk4f4Y2aKZMxmpt-H9IfjCzY6GhGDPfcg&libraries=places"></script>
     <script src="cart.js"></script>
     <script src="maps.js"></script>
+    <script src="validation.js"></script>
 </body>
 </html>
