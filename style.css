@@ -3,11 +3,11 @@
   margin: 0;
 }
 body {
-  background-color: #f2faff;
+  background-color: #dfe6eb;
 }
 
 .navbar {
-  background-color: #fcede9;
+  background-color: #ecc8bf;
 }
 
 .navbar-nav {
@@ -56,9 +56,10 @@ body {
 }
 
 #content {
-  margin-top: 5%;
+  margin-top: 70px;
+  padding-top: 20px;
   text-align: center;
-  background: #fcede9;
+  background: #ecc8bf;
 }
 
 #menu1,
