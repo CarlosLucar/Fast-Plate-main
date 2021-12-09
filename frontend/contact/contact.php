@@ -73,14 +73,9 @@
         <textarea id="subject" name="subject" placeholder="Enter comment here" style="height:200px"></textarea>
         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
     </form>
-<<<<<<< HEAD
 </div>
 
 <div class="footer-container">
-=======
-
-    <div class="footer-container">
->>>>>>> 3c93a2c2df6c6feb9dd560fb6bb50d30c17ab4f1
         <div class="footer">
             <div class="footer-heading footer-1">
                 <h2>About Us</h2>
@@ -114,7 +109,6 @@
         </div>
     </div>
 
-<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -122,9 +116,6 @@
     <script src="menu.js"></script>
 
     <script src="cart.js"></script>
-=======
-
->>>>>>> 3c93a2c2df6c6feb9dd560fb6bb50d30c17ab4f1
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
