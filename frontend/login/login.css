@@ -57,6 +57,12 @@ body {
   box-shadow: none !important;
 }
 
+.btn-primary:focus {
+  background-color: #d63838;
+  border-color: #d63838;
+  box-shadow: none;
+}
+
 .brand {
   font-size: 20px;
 }
