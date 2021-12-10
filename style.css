@@ -261,6 +261,10 @@ body {
   left: 20%;
 }
 
+#receipt{
+  position: relative;
+  left: 45%;
+}
 /* -------------------------------- Google Map ------------------------------------*/
 
 #googleMap {

@@ -29,7 +29,7 @@ function calcRoute(){
     directionService.route(request, (result, status) =>{
         if (status == google.maps.DirectionsStatus.OK) {
             const output = document.querySelector('#output');
-            output.innerHTML = "<div> To: " + document.getElementById("address").value + ". <br /> Driving distance:" + result.routes[0].legs[0].distance.text + ".<br />Duration: " + result.routes[0].legs[0].duration.text + ". </div>";
+            output.innerHTML = "<div> Destination: " + document.getElementById("address").value + ". <br /> Driving distance: " + result.routes[0].legs[0].distance.text + ".<br />Time for delivery: " + result.routes[0].legs[0].duration.text + ". </div>";
             
 
             directionsDisplay.setDirections(result);
