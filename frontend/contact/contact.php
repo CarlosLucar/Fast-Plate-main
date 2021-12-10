@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 
     <title>Become a Partner</title>
-    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="shortcut icon" type="image/png" href="image/logo.png">
 </head>
 
 <body>
